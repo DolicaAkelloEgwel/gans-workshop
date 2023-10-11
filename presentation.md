@@ -10,7 +10,8 @@ marp: true
 
 1. Go to this link:
 2. Log in to your Google account
-3.
+3. Create a folder called `gans-workshop-files` in the top level of your Google Drive folder
+4. Make sure your folder with 500 images is in here
 
 ---
 
