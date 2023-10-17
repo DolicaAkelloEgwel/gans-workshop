@@ -58,3 +58,9 @@ img[alt~="center"] {
 # This Person Should Not Exist
 
 ![h:350 center](./presentation-images/should-not-exist.png)
+
+---
+
+# Optimisation
+
+![h:350 center](./presentation-images/optimisation.png)
