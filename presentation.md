@@ -45,7 +45,10 @@ img[alt~="center"] {
 
 # MNIST Dataset
 
-![w:500 center](./presentation-images/mnist.gif)
+![bg right](./presentation-images/mnist.gif)
+
+- MNIST is a well-known dataset of handwritten numbers
+- Very popular for testing image processing code
 
 ---
 
@@ -61,6 +64,14 @@ img[alt~="center"] {
 
 ---
 
+<<<<<<< Updated upstream
 # Optimisation
 
 ![h:350 center](./presentation-images/optimisation.png)
+=======
+# Cat Datset
+
+2000 epochs and 500 images.
+
+![h:350 center](./presentation-images/cats-500-images-2000-epochs.png)
+>>>>>>> Stashed changes
