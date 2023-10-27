@@ -8,28 +8,23 @@ marp: true
 
 # Setup
 
-1. Go to this link:
+1. Go to this link: **bit.ly/45svhk0**
 2. Log in to your Google account
-3. Create a folder called `gans-workshop-files` in the top level of your Google Drive folder
-4. Make sure your folder with 500 images is in here
+
+If you got some of your own files then...
+1. Create a folder called `gans-workshop-files` in the top level of your Google Drive folder
+2. Within that folder create another folder for your images. This can be named cats/trees/flowers/etc.
 
 ---
 
 # What are GANs?
 
 - Generative Adversarial Networks (GANs)
-- Two models trained simultaneously
-- A Generator ("the artist") is trying to learn to create images that look real
-- A Discriminator ("the art critic") is trying to tell real images apart from fakes
+- Two neural networks trained simultaneously
+- A Generator ("the criminal") is trying to learn to create fake images
+- A Discriminator ("the detective") is trying to tell real images from the fake images
 
 ---
-
-![bg](./presentation-images/generator-discriminator.png)
-
----
-
-During training, the generator progressively becomes better at creating images that look real, while the discriminator becomes better at telling them apart. The process reaches equilibrium when the discriminator can no longer distinguish real images from fakes.
-
 
 <style>
 img[alt~="center"] {
@@ -38,8 +33,15 @@ img[alt~="center"] {
 }
 </style>
 
-![w:640 center](./presentation-images/gan-progress.png)
+![w:900 center](./presentation-images/generator-discriminator.png)
 
+<!--
+- The Criminal starts with "random data." This would be like drawing random images on a piece of paper while blindfolded.
+- The Detective is presented with a real bank note and a fake note, and has to say which one it thinks is real.
+- If the Detective can tell that they money is fake then the Criminal goes away and tries to get better at making fake money. The Detective got it right, so it doesn't change its behaviour.
+- If the Detective can't tell that the counterfeit money is fake, then it tries to get better at spotting fake money. The Criminal doesn't change its behaviour because it was successful.
+- After enough repetitions of this, we obtain "convergence" when the Criminal's fake money becomes so convincing that the Detective gives up on trying to tell what's what. All it can do is say there's a 50/50 chance because it's stumped.
+ -->
 
 ---
 
@@ -63,15 +65,30 @@ img[alt~="center"] {
 ![h:350 center](./presentation-images/should-not-exist.png)
 
 ---
+# Loss Functions
 
-<<<<<<< Updated upstream
-# Optimisation
+Our loss functions allow us to see how well the Generator and Discriminator are doing.
+
+$D(x)$ measures how confident the Discriminator is that a real image is authentic. The Discriminator wants this to be a higher value.
+$D(G(z))$ measures how confident the Discriminator is that a fake image is authentic. The Generator wants this to be a higher value whereas the Discriminator wants this to be a lower value.
+
+Hence the name adversarial...
+
+---
+# Loss Functions
+
+## Discriminator Loss
+$\frac{1}{m}\sum_{i=1}^m \log(D(x^i)) + \log(1 - D(G(z^i)))$
+
+## Generator Loss
+$\frac{1}{m}\sum_{i=1}^m \log(1 - D(G(z^i)))$
+
+---
+# Mathematical Optimisation
+
+GANs are based on the maths of optimisation. The objective of optimisation is to find the best solution to problem.
 
 ![h:350 center](./presentation-images/optimisation.png)
-=======
-# Cat Datset
 
-2000 epochs and 500 images.
+The Discriminator wishes to maximise its loss function while the Generator wishes to minimise its loss function.
 
-![h:350 center](./presentation-images/cats-500-images-2000-epochs.png)
->>>>>>> Stashed changes
