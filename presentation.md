@@ -23,7 +23,6 @@ If you got some of your own files then...
 - Two neural networks trained simultaneously
 - A Generator ("the criminal") is trying to learn to create fake images
 - A Discriminator ("the detective") is trying to tell real images from the fake images
-- They help make the other better at their job
 
 ---
 
@@ -65,15 +64,21 @@ img[alt~="center"] {
 ---
 # Loss Functions
 
-Our loss functions allows us to see how well the Generator and Discriminator are doing.
+Our loss functions allow us to see how well the Generator and Discriminator are doing.
 
-$D(x)$ measures how confident the Discriminator is that a real image is authentic.
-$D(G(z))$ measures how confidence the Discriminator is that a fake image is authentic.
+$D(x)$ measures how confident the Discriminator is that a real image is authentic. The Discriminator wants this to be a higher value.
+$D(G(z))$ measures how confident the Discriminator is that a fake image is authentic. The Generator wants this to be a higher value whereas the Discriminator wants this to be a lower value.
 
-|   | $D(x)$  | $D(G(z))$  |
-|---|---|---|
-| The Discriminator wants this value to approach...  | 1  | 0 |
-| The Generator wants this value to approach...  |   | 1  |
+Hence the name adversarial...
+
+---
+# Loss Functions
+
+## Discriminator Loss
+$\frac{1}{m}\sum_{i=1}^m \log(D(x^i)) + \log(1 - D(G(z^i)))$
+
+## Generator Loss
+$\frac{1}{m}\sum_{i=1}^m \log(1 - D(G(z^i)))$
 
 ---
 # Mathematical Optimisation
@@ -82,4 +87,7 @@ GANs are based on the maths of optimisation. The objective of optimisation is to
 
 ![h:350 center](./presentation-images/optimisation.png)
 
-Our aim here is to
+The Discriminator wishes to maximise its loss function while the Generator wishes to minimise its loss function.
+
+---
+# Mode Collapse
