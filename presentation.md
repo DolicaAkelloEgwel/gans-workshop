@@ -19,10 +19,34 @@ If you got some of your own files then...
 
 # What are GANs?
 
-- Generative Adversarial Networks (GANs)
+GAN stands for Generative Adversarial Networks. So what does that mean? Well let's start with the word _generative_...
+
+---
+# Generative?
+
+**Generative:** Capable of producing or creating something.
+
+- **Discriminative:** Identifies and distinguishes between categories, such as recognizing that a cat is a cat and a dog is a dog.
+- **Generative:** Generates new instances of cats or dogs by applying learned patterns.
+
+Later, we'll explore how GANs actually combine these things.
+
+![bg right](./presentation-images/rabbit-hat.webp)
+
+---
+# Adversarial?
+
+**Adversarial:**  involving people opposing or disagreeing with each other.
+
+![w600 center](./presentation-images/adversary.gif)
+
+---
+
 - Two neural networks trained simultaneously
 - A Generator ("the criminal") is trying to learn to create fake images
 - A Discriminator ("the detective") is trying to tell real images from the fake images
+
+“You can think of generative models as giving artificial intelligence a form of imagination.” - Ian Goodfellow
 
 ---
 
