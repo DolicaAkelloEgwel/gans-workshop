@@ -33,7 +33,7 @@ img[alt~="center"] {
 }
 </style>
 
-![w:900 center](./presentation-images/generator-discriminator.png)
+![w:900 center](./presentation-images/generator-discriminator.webp)
 
 <!--
 - The Criminal starts with "random data." This would be like drawing random images on a piece of paper while blindfolded.
