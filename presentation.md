@@ -44,6 +44,42 @@ img[alt~="center"] {
  -->
 
 ---
+# Lists Recap
+
+In the previous workshop we covered Lists in Python. Lists are an ordered data structure that allow us to hold a collection of items.
+
+```python
+my_list = [1, 2, 3, 4, 5]
+my_other_list = ["a", "b", "c"]
+my_empty_list = []
+```
+
+![w:500 center](./presentation-images/python-list.png)
+
+---
+
+# Arrays and Images
+
+So for images we need something like a list for holding values for our pixels...
+
+![w:700 center](./presentation-images/star-image-example.png)
+
+---
+# Arrays and Images
+
+In the code we will store our images in the form of something called _arrays_. Like Lists, they are able to hold a collection of values and store them in a single variable. But because we are dealing with images we need a "grid" (or more accurately several grids) rather than a simple list.
+
+![w:750 center](./presentation-images/numpy-array.webp)
+
+---
+# Lists and Arrays
+
+- Black and White images: 2D array for "brightness"
+- Colour images: 3D array for RGB channels
+
+The GAN has less work to do in the case of black and white images.
+
+---
 
 # MNIST Dataset
 
