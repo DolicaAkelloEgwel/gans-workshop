@@ -19,7 +19,11 @@ If you got some of your own files then...
 
 # What are GANs?
 
-GAN stands for Generative Adversarial Networks. So what does that mean? Well let's start with the word _generative_...
+- GAN stands for Generative Adversarial Networks.
+- They have exploded in popularity in quite a short time.
+- It started in a pub...
+
+So what does Generative Adversarial Network? Well let's start with the word _generative_...
 
 ---
 # Generative?
@@ -38,15 +42,40 @@ Later, we'll explore how GANs actually combine these things.
 
 **Adversarial:**  involving people opposing or disagreeing with each other.
 
-![w600 center](./presentation-images/adversary.gif)
+![w:800 center](./presentation-images/jesus-versus-devil-epic-battle.jpg)
 
 ---
+# Network?
+
+Neural networks are
+
+![bg left](./presentation-images/network.png)
+
+---
+
+# Putting it all together...
+
+---
+
+We are _generating_ fake data by using two neural _networks_ that have an _adversarial_ relationship.
+
+---
+
+# GAN Components
 
 - Two neural networks trained simultaneously
 - A Generator ("the criminal") is trying to learn to create fake images
 - A Discriminator ("the detective") is trying to tell real images from the fake images
+---
+# The GAN "Game" I
 
-“You can think of generative models as giving artificial intelligence a form of imagination.” - Ian Goodfellow
+GANs resemble a turn-based game.
+
+1) Our criminal creates a fake note
+2) Our detective sees a real note and a fake note and is asked to tell which is which
+3) The criminal "wins" a round of the game if it fools the detective
+4) The detective "wins" a round of the game if it can spot the fake
+5) The loser then goes away and changes their _strategy_ in the next round of the game but the winner simply carries on what it was doing before
 
 ---
 
@@ -68,6 +97,17 @@ img[alt~="center"] {
  -->
 
 ---
+# The GAN "Game" II
+
+- The game takes place for several turns (or epochs) (or iterations...)
+  - For us this can mean leaving the code running for several hours...
+- We want our detective to get smarter, because that means the criminal has more of a challenge and is forced to _get better_ at creating fake notes
+- Ideally, what will happen is that the criminal's fake notes become so convicing that the detective can't tell the difference
+---
+
+# So how does a program store an image?
+
+---
 # Lists Recap
 
 In the previous workshop we covered Lists in Python. Lists are an ordered data structure that allow us to hold a collection of items.
@@ -82,9 +122,9 @@ my_empty_list = []
 
 ---
 
-# Arrays and Images
+# Image Data
 
-So for images we need something like a list for holding values for our pixels...
+So for images we need something like a list for holding values for our pixels, but we need something more...
 
 ![w:700 center](./presentation-images/star-image-example.png)
 
@@ -96,7 +136,7 @@ In the code we will store our images in the form of something called _arrays_. L
 ![w:750 center](./presentation-images/numpy-array.webp)
 
 ---
-# Lists and Arrays
+# Arrays and Images
 
 - Black and White images: 2D array for "brightness"
 - Colour images: 3D array for RGB channels
@@ -118,11 +158,26 @@ The GAN has less work to do in the case of black and white images.
 
 ![w:500 center](./presentation-images/doesnt-exist.jpg)
 
+Created using the StyleGAN created by Nvidia.
+
 ---
 
 # This Person Should Not Exist
 
 ![h:350 center](./presentation-images/should-not-exist.png)
+
+---
+
+# How do we know that our GAN is heading in the right direction?
+
+---
+# Mathematical Optimisation
+
+GANs are based on the maths of optimisation. The objective of optimisation is to find the best solution to problem.
+
+![h:350 center](./presentation-images/optimisation.png)
+
+The Discriminator wishes to maximise its loss function while the Generator wishes to minimise its loss function.
 
 ---
 # Loss Functions
@@ -144,11 +199,12 @@ $\frac{1}{m}\sum_{i=1}^m \log(D(x^i)) + \log(1 - D(G(z^i)))$
 $\frac{1}{m}\sum_{i=1}^m \log(1 - D(G(z^i)))$
 
 ---
-# Mathematical Optimisation
+# Now let's head over to the notebook...
 
-GANs are based on the maths of optimisation. The objective of optimisation is to find the best solution to problem.
+---
+# Why Use the GPU?
+---
+# Issues with GANs
+---
 
-![h:350 center](./presentation-images/optimisation.png)
-
-The Discriminator wishes to maximise its loss function while the Generator wishes to minimise its loss function.
-
+“You can think of generative models as giving artificial intelligence a form of **imagination**.” - Ian Goodfellow
