@@ -8,12 +8,17 @@ marp: true
 
 # Setup
 
-1. Go to this link: **bit.ly/45svhk0**
-2. Log in to your Google account
+**Note**: This workshop requires an understanding of basic Python. Experience from your own projects is fine.
 
-If you got some of your own files then...
-1. Create a folder called `gans-workshop-files` in the top level of your Google Drive folder
+1. Go to this link: **bit.ly/45svhk0**
+2. Log in to your Google account.
+
+If **do** you have some of your own files then...
+1. Create a folder called `gans-workshop-files` in the top level of your Google Drive folder.
 2. Within that folder create another folder for your images. This can be named cats/trees/flowers/etc.
+
+If you **don't** have some of your own files then...
+1. Do nothing!
 
 ---
 
@@ -30,7 +35,7 @@ So what does Generative Adversarial Network? Well let's start with the word _gen
 
 **Generative:** Capable of producing or creating something.
 
-- **Discriminative:** Identifies and distinguishes between categories, such as recognizing that a cat is a cat and a dog is a dog.
+- **Discriminative:** Identifies and distinguishes between categories, such as recognising that a cat is a cat and a dog is a dog.
 - **Generative:** Generates new instances of cats or dogs by applying learned patterns.
 
 Later, we'll explore how GANs actually combine these things.
@@ -47,7 +52,7 @@ Later, we'll explore how GANs actually combine these things.
 ---
 # Network?
 
-Neural networks are
+Neural networks are algorithms that endeavor to recognise the underlying relationships in a set of data.
 
 ![bg left](./presentation-images/network.png)
 
@@ -63,13 +68,16 @@ We are _generating_ fake data by using two neural _networks_ that have an _adver
 
 # GAN Components
 
-- Two neural networks trained simultaneously
-- A Generator ("the criminal") is trying to learn to create fake images
-- A Discriminator ("the detective") is trying to tell real images from the fake images
----
-# The GAN "Game" I
+- A **Generator** ("the criminal") is trying to learn to create fake images
+- A **Discriminator** ("the detective") is trying to tell real images from the fake images
+- The two neural networks are _trained_ simultaneously
 
-GANs resemble a turn-based game.
+---
+
+We can think of a GAN as being like a turn-based game...
+
+---
+# The GAN Game I
 
 1) Our criminal creates a fake note
 2) Our detective sees a real note and a fake note and is asked to tell which is which
@@ -97,7 +105,7 @@ img[alt~="center"] {
  -->
 
 ---
-# The GAN "Game" II
+# The GAN Game II
 
 - The game takes place for several turns (or epochs) (or iterations...)
   - For us this can mean leaving the code running for several hours...
@@ -124,7 +132,7 @@ my_empty_list = []
 
 # Image Data
 
-So for images we need something like a list for holding values for our pixels, but we need something more...
+So for images we ought to use something like a list for holding values for our pixels, but with something a bit more...
 
 ![w:700 center](./presentation-images/star-image-example.png)
 
@@ -158,36 +166,40 @@ The GAN has less work to do in the case of black and white images.
 
 ![w:500 center](./presentation-images/doesnt-exist.jpg)
 
-Created using the StyleGAN created by Nvidia.
+Created using the StyleGAN developed by Nvidia.
 
 ---
 
-# This Person Should Not Exist
+# This Person Should Not Exist ???
 
 ![h:350 center](./presentation-images/should-not-exist.png)
 
 ---
 
-# How do we know that our GAN is heading in the right direction?
+# How do we know that our GAN is heading in a good direction?
 
 ---
-# Mathematical Optimisation
+# Mathematical Optimisation (or Min-Max Problems)
 
 GANs are based on the maths of optimisation. The objective of optimisation is to find the best solution to problem.
 
 ![h:350 center](./presentation-images/optimisation.png)
 
-The Discriminator wishes to maximise its loss function while the Generator wishes to minimise its loss function.
+So what do we wish to "optimise" when running our GAN?
 
 ---
 # Loss Functions
 
-Our loss functions allow us to see how well the Generator and Discriminator are doing.
+Our loss functions give us an indication of how well the Generator and Discriminator are performing.
 
-$D(x)$ measures how confident the Discriminator is that a real image is authentic. The Discriminator wants this to be a higher value.
-$D(G(z))$ measures how confident the Discriminator is that a fake image is authentic. The Generator wants this to be a higher value whereas the Discriminator wants this to be a lower value.
+- $x$ is a real image.
+- $D(x)$ is the Discriminator's judgement on the real image.
+- $z$ is random noise.
+- $G(z)$ is the Generator's attempt at creating a fake image.
+- $D(G(z))$ is the Discriminator's judgement on the gake.
 
-Hence the name adversarial...
+The Discriminator wants $D(x)$ to be high as possible and for $D(G(z))$ to be as low as possible.
+The Generator wants $D(G(z))$ to be as high as possible.
 
 ---
 # Loss Functions
@@ -198,13 +210,33 @@ $\frac{1}{m}\sum_{i=1}^m \log(D(x^i)) + \log(1 - D(G(z^i)))$
 ## Generator Loss
 $\frac{1}{m}\sum_{i=1}^m \log(1 - D(G(z^i)))$
 
+The Discriminator wishes to **maximise** its loss function while the Generator wishes to **minimise** its loss function.
+
 ---
 # Now let's head over to the notebook...
 
----
+<!-- ---
 # Why Use the GPU?
----
+
+- A good GPU is good at doing maths.
+- For a game  -->
+
+<!-- ---
 # Issues with GANs
+
+## Mode Collapse -->
+
+---
+# Running the Code Locally
+
+- Download Miniforge: https://github.com/conda-forge/miniforge
+- Clone my repo: https://github.com/DolicaAkelloEgwel/gans-workshop
+- Use `where` (Windows) or `whereis` (Linux) in the Miniforge prompt
+- Use this as your Conda path in VSCode (May need to isntall some things before you get this option)
+- In Miniforge prompt, create an environment with the `environment.yml` file
+- In VSCode, use the `gans-environment` as your Python Interpreter
+
+
 ---
 
 “You can think of generative models as giving artificial intelligence a form of **imagination**.” - Ian Goodfellow
