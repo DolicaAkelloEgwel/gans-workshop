@@ -235,8 +235,8 @@ The Discriminator wishes to **maximise** its loss function while the Generator w
 - Use this as your Conda path in VSCode (May need to isntall some things before you get this option)
 - In Miniforge prompt, create an environment with the `environment.yml` file
 - In VSCode, use the `gans-environment` as your Python Interpreter
-
+---
+# Kaggle
 
 ---
-
 “You can think of generative models as giving artificial intelligence a form of **imagination**.” - Ian Goodfellow
