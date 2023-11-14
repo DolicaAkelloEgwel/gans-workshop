@@ -196,10 +196,9 @@ Our loss functions give us an indication of how well the Generator and Discrimin
 - $D(x)$ is the Discriminator's judgement on the real image.
 - $z$ is random noise.
 - $G(z)$ is the Generator's attempt at creating a fake image.
-- $D(G(z))$ is the Discriminator's judgement on the gake.
+- $D(G(z))$ is the Discriminator's judgement on the fake image.
 
-The Discriminator wants $D(x)$ to be high as possible and for $D(G(z))$ to be as low as possible.
-The Generator wants $D(G(z))$ to be as high as possible.
+The Discriminator wants $D(x)$ to be high as possible. For $D(G(z))$ the Discriminator wants this to be as low as possible while the Generator wants this to be as high as possible.
 
 ---
 # Loss Functions
@@ -221,10 +220,16 @@ The Discriminator wishes to **maximise** its loss function while the Generator w
 - A good GPU is good at doing maths.
 - For a game  -->
 
-<!-- ---
+---
 # Issues with GANs
 
-## Mode Collapse -->
+---
+# Mode Collapse
+
+![h:500 center](./presentation-images/mode-collapse.png)
+
+---
+# Failing to Converge
 
 ---
 # Running the Code Locally
