@@ -131,6 +131,12 @@ img[alt~="center"] {
 ![h:350 center](./presentation-images/should-not-exist.png)
 
 ---
+# BigGAN
+
+![h:400 center](./presentation-images/biggan.png)
+
+<!-- This is achieved with interpolation between different categories. -->
+
 ---
 # So how does a program store an image?
 
