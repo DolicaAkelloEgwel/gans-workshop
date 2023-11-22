@@ -200,6 +200,12 @@ GANs are based on the maths of optimisation. The objective of optimisation is to
 
 ![h:350 center](./presentation-images/optimisation.png)
 
+
+---
+# Gradient Descent
+
+![h:500 center](./presentation-images/gradient-descent.gif)
+
 So what do we wish to "optimise" when running our GAN?
 
 ---
@@ -213,7 +219,7 @@ Our loss functions give us an indication of how well the Generator and Discrimin
 - $G(z)$ is the Generator's attempt at creating a fake image.
 - $D(G(z))$ is the Discriminator's judgement on the fake image.
 
-The Discriminator wants $D(x)$ to be high as possible. For $D(G(z))$ the Discriminator wants this to be as low as possible while the Generator wants this to be as high as possible.
+The Discriminator wants $D(x)$ to be high as possible. For $D(G(z))$ the Discriminator wants this to be as low as possible while the Generator wants this to be as high as possible. 
 
 ---
 # Loss Functions
