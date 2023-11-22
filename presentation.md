@@ -112,7 +112,26 @@ img[alt~="center"] {
 - We want our detective to get smarter, because that means the criminal has more of a challenge and is forced to _get better_ at creating fake notes
 - Ideally, what will happen is that the criminal's fake notes become so convicing that the detective can't tell the difference
 ---
+# Applications of GANs
+---
+# CycleGAN
 
+![h:450 center](./presentation-images/cycle-gan.png)
+
+---
+
+# StyleGAN - This Person Does Not Exist
+
+![w:500 center](./presentation-images/doesnt-exist.jpg)
+
+---
+
+# StyleGAN - This Person Should Not Exist ???
+
+![h:350 center](./presentation-images/should-not-exist.png)
+
+---
+---
 # So how does a program store an image?
 
 ---
@@ -149,7 +168,11 @@ In the code we will store our images in the form of something called _arrays_. L
 - Black and White images: 2D array for "brightness"
 - Colour images: 3D array for RGB channels
 
-The GAN has less work to do in the case of black and white images.
+The GAN has _less work to do_ in the case of black and white images.
+
+---
+
+![h:500 center](./presentation-images/bw-colour.png)
 
 ---
 
@@ -159,20 +182,6 @@ The GAN has less work to do in the case of black and white images.
 
 - MNIST is a well-known dataset of handwritten numbers
 - Very popular for testing image processing code
-
----
-
-# This Person Does Not Exist
-
-![w:500 center](./presentation-images/doesnt-exist.jpg)
-
-Created using the StyleGAN developed by Nvidia.
-
----
-
-# This Person Should Not Exist ???
-
-![h:350 center](./presentation-images/should-not-exist.png)
 
 ---
 
@@ -236,7 +245,7 @@ The Discriminator wishes to **maximise** its loss function while the Generator w
 
 - Download Miniforge: https://github.com/conda-forge/miniforge
 - Clone my repo: https://github.com/DolicaAkelloEgwel/gans-workshop
-- Use `where` (Windows) or `whereis` (Linux) in the Miniforge prompt
+- Use `where` in the Miniforge prompt to find the path of Conda or Mamba
 - Use this as your Conda path in VSCode (May need to isntall some things before you get this option)
 - In Miniforge prompt, create an environment with the `environment.yml` file
 - In VSCode, use the `gans-environment` as your Python Interpreter
