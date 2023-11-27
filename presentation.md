@@ -196,6 +196,12 @@ The GAN has _less work to do_ in the case of black and white images.
 
 ---
 
+# Basic Classification Example
+
+https://www.3blue1brown.com/lessons/neural-networks
+
+---
+
 # How do we know that our GAN is heading in a good direction?
 
 ---
@@ -251,6 +257,8 @@ The Discriminator wishes to **maximise** its loss function while the Generator w
 ---
 # Mode Collapse
 ![h:500 center](./presentation-images/mode-collapse.png)
+
+These are definitely ones...
 
 ---
 # Failing to Converge
