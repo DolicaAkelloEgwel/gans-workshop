@@ -14,7 +14,7 @@ marp: true
 2. Log in to your Google account.
 
 If **do** you have some of your own files then...
-1. Create a folder called `gans-workshop-files` in the top level of your Google Drive folder.
+1. Create a folder called `gans-workshop-files` in the _top level_ of your Google Drive folder.
 2. Within that folder create another folder for your images. This can be named cats/trees/flowers/etc.
 
 If you **don't** have some of your own files then...
@@ -112,9 +112,30 @@ img[alt~="center"] {
 - We want our detective to get smarter, because that means the criminal has more of a challenge and is forced to _get better_ at creating fake notes
 - Ideally, what will happen is that the criminal's fake notes become so convicing that the detective can't tell the difference
 ---
-# Applications of GANs
+# Types of GANs
+
 ---
 # CycleGAN
+
+![h:400 center](./presentation-images/cyclegan.png)
+
+The background is changed too.
+
+---
+
+# StyleGAN - This Person Does Not Exist
+
+![w:500 center](./presentation-images/doesnt-exist.jpg)
+
+Created using the StyleGAN developed by Nvidia.
+
+---
+
+# StyleGAN - This Person Should Not Exist ??? 😱
+
+![h:350 center](./presentation-images/should-not-exist.png)
+
+---
 
 ![h:450 center](./presentation-images/cycle-gan.png)
 
@@ -219,7 +240,7 @@ Our loss functions give us an indication of how well the Generator and Discrimin
 - $G(z)$ is the Generator's attempt at creating a fake image.
 - $D(G(z))$ is the Discriminator's judgement on the fake image.
 
-The Discriminator wants $D(x)$ to be high as possible. For $D(G(z))$ the Discriminator wants this to be as low as possible while the Generator wants this to be as high as possible. 
+The Discriminator wants $D(x)$ to be high as possible. For $D(G(z))$ the Discriminator wants this to be as low as possible while the Generator wants this to be as high as possible.
 
 ---
 # Loss Functions
@@ -243,26 +264,27 @@ The Discriminator wishes to **maximise** its loss function while the Generator w
 
 ---
 # Issues with GANs
-
 ---
 # Mode Collapse
-
 ![h:500 center](./presentation-images/mode-collapse.png)
 
 ---
 # Failing to Converge
-
 ---
 # Running the Code Locally
 
 - Download Miniforge: https://github.com/conda-forge/miniforge
 - Clone my repo: https://github.com/DolicaAkelloEgwel/gans-workshop
-- Use `where` in the Miniforge prompt to find the path of Conda or Mamba
-- Use this as your Conda path in VSCode (May need to isntall some things before you get this option)
+- Make sure you've installed the Python extension in VSCode
+- Use `where` (Windows) in the Miniforge prompt
+- Use this path in VSCode as your Conda path
 - In Miniforge prompt, create an environment with the `environment.yml` file
-- In VSCode, use the `gans-environment` as your Python Interpreter
+- In VSCode, refresh available interpresters, then use the `gans-environment` as your Python Interpreter
 ---
 # Kaggle
+---
+
+![h:600 center](./presentation-images/new-books.png)
 
 ---
 “You can think of generative models as giving artificial intelligence a form of **imagination**.” - Ian Goodfellow
