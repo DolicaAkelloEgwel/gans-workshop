@@ -136,22 +136,6 @@ Created using the StyleGAN developed by Nvidia.
 ![h:350 center](./presentation-images/should-not-exist.png)
 
 ---
-
-![h:450 center](./presentation-images/cycle-gan.png)
-
----
-
-# StyleGAN - This Person Does Not Exist
-
-![w:500 center](./presentation-images/doesnt-exist.jpg)
-
----
-
-# StyleGAN - This Person Should Not Exist ???
-
-![h:350 center](./presentation-images/should-not-exist.png)
-
----
 # BigGAN
 
 ![h:400 center](./presentation-images/biggan.png)
