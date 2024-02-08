@@ -201,6 +201,41 @@ The GAN has _less work to do_ in the case of black and white images.
 https://www.3blue1brown.com/lessons/neural-networks
 
 ---
+# Issues with GANs
+---
+# Mode Collapse
+![h:500 center](./presentation-images/mode-collapse.png)
+
+These are definitely ones...
+
+---
+
+![h:450 center](./presentation-images/matlab-mode-collapse.png)
+
+---
+# Convergence Failure
+
+Convergence failure is what happens when the generator and discriminator do not reach balance during training.
+
+---
+# Converge Failure: Discriminator Dominates
+
+The detective becomes too smart too early in the game, so the criminal doesn't get a chance to properly learn what it should and shouldn't do to create convicing notes.
+
+---
+
+![h:450 center](./presentation-images/plot_discriminator_dominates.png)
+
+---
+# Converge Failure: Generator Dominates
+
+The criminal gets too smart too early in the game, so it's able to get away with making "meh" notes as these are still enough to fool the detective.
+
+---
+
+![h:450 center](./presentation-images/plot_generator_dominates.png)
+
+---
 
 # How do we know that our GAN is heading in a good direction?
 
@@ -252,16 +287,6 @@ The Discriminator wishes to **maximise** its loss function while the Generator w
 - A good GPU is good at doing maths.
 - For a game  -->
 
----
-# Issues with GANs
----
-# Mode Collapse
-![h:500 center](./presentation-images/mode-collapse.png)
-
-These are definitely ones...
-
----
-# Failing to Converge
 ---
 # Running the Code Locally
 
