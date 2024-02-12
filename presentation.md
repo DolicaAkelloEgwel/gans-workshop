@@ -210,30 +210,24 @@ These are definitely ones...
 
 ---
 
-![h:450 center](./presentation-images/matlab-mode-collapse.png)
+![h:450 center](./presentation-images/mode_collapse_no_plot.png)
 
 ---
 # Convergence Failure
 
 Convergence failure is what happens when the generator and discriminator do not reach balance during training.
 
----
-# Converge Failure: Discriminator Dominates
+## Discriminator Dominates
 
 The detective becomes too smart too early in the game, so the criminal doesn't get a chance to properly learn what it should and shouldn't do to create convicing notes.
 
----
-
-![h:450 center](./presentation-images/plot_discriminator_dominates.png)
-
----
-# Converge Failure: Generator Dominates
+## Generator Dominates
 
 The criminal gets too smart too early in the game, so it's able to get away with making "meh" notes as these are still enough to fool the detective.
 
 ---
 
-![h:450 center](./presentation-images/plot_generator_dominates.png)
+![h:450 center](./presentation-images/convergence_failure_combined.png)
 
 ---
 
@@ -279,6 +273,19 @@ $\frac{1}{m}\sum_{i=1}^m \log(1 - D(G(z^i)))$
 The Discriminator wishes to **maximise** its loss function while the Generator wishes to **minimise** its loss function.
 
 ---
+# Convergence Failure
+## Discriminator Dominates
+
+![h:450 center](./presentation-images/plot_discriminator_dominates.png)
+
+---
+# Convergence Failure
+## Generator Dominates
+
+![h:450 center](./presentation-images/plot_generator_dominates.png)
+
+---
+
 # Now let's head over to the notebook...
 
 <!-- ---
