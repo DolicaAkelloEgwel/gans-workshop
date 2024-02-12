@@ -295,6 +295,36 @@ The Discriminator wishes to **maximise** its loss function while the Generator w
 - For a game  -->
 
 ---
+
+# Creative AI Stuff
+
+---
+
+# Artist + Machine Intelligence
+
+https://ami.withgoogle.com/
+
+---
+
+# K Allado-McDowell
+
+![h:450 center](./presentation-images/k-allado-mcdowell.png)
+
+---
+
+# Google DeepDream
+
+![h:450 center](./presentation-images/deep-dream.webp)
+
+---
+
+# Sound of the Earth
+
+![h:500 center](./presentation-images/sound-of-the-earth.png)
+
+https://soundoftheearth.org/
+
+---
 # Running the Code Locally
 
 - Download Miniforge: https://github.com/conda-forge/miniforge
