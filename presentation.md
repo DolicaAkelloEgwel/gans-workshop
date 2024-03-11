@@ -325,6 +325,22 @@ https://ami.withgoogle.com/
 https://soundoftheearth.org/
 
 ---
+
+# Dadabots
+
+![h:500 center](./presentation-images/dadabots-beatles.jpg)
+
+https://dadabots.bandcamp.com/album/deep-the-beatles
+
+---
+
+# Ganrio
+
+![h:500 center](./presentation-images/ganrio.webp)
+
+https://amyelizabethsmith01.medium.com/gans-sanrio-ganrio-21e263666929
+
+---
 # Running the Code Locally
 
 - Download Miniforge: https://github.com/conda-forge/miniforge
@@ -334,8 +350,7 @@ https://soundoftheearth.org/
 - Use this path in VSCode as your Conda path
 - In Miniforge prompt, create an environment with the `environment.yml` file
 - In VSCode, refresh available interpresters, then use the `gans-environment` as your Python Interpreter
----
-# Kaggle
+
 ---
 
 ![h:600 center](./presentation-images/new-books.png)
