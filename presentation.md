@@ -319,12 +319,33 @@ https://amyelizabethsmith01.medium.com/gans-sanrio-ganrio-21e263666929
 
 ---
 
-# Black To Comm
+# Wordcar
 
-https://www.youtube.com/watch?v=XqV3Cftxw4A
+![h:450 center](./presentation-images/wordcar.jpg)
+
+https://www.youtube.com/watch?v=TqsW0PMd8R0
 
 ---
 
+# Black To Comm
+
+![h:450 center](./presentation-images/black-to-comm.jpg)
+
+https://blacktocomm.bandcamp.com/album/le-jazz-homme
+
+---
+
+# clowncore (Extremely NSFW...)
+
+![h:450 center](./presentation-images/clowncore.jpg)
+
+There is a link in the Linktree if you're curious about this. The weird stuff starts at 22.30!
+
+---
+
+
 “You can think of generative models as giving artificial intelligence a form of **imagination**.” - Ian Goodfellow
 
-Feedback Form: **linktr.ee/dolica.ual**
+### Feedback Form
+
+linktr.ee/dolica.ual
