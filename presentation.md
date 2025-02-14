@@ -10,8 +10,9 @@ marp: true
 
 **Note**: This workshop requires an understanding of basic Python. Experience from your own projects is fine.
 
-1. Go to this link: **bit.ly/45svhk0**
-2. Log in to your Google account.
+1. Go to this link: **linktr.ee/dolica.ual**
+2. Open the GANs with Python Notebook link.
+3. Log in to your Google account.
 
 If **do** you have some of your own files then...
 1. Create a folder called `gans-workshop-files` in the _top level_ of your Google Drive folder.
