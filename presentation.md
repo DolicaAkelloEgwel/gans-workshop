@@ -14,13 +14,6 @@ marp: true
 2. Open the GANs with Python Notebook link.
 3. Log in to your Google account.
 
-If **do** you have some of your own files then...
-1. Create a folder called `gans-workshop-files` in the _top level_ of your Google Drive folder.
-2. Within that folder create another folder for your images. This can be named cats/trees/flowers/etc.
-
-If you **don't** have some of your own files then...
-1. Do nothing!
-
 ---
 
 # What are GANs?
