@@ -119,7 +119,7 @@ The background is changed too.
 
 # StyleGAN - This Person Does Not Exist
 
-![w:500 center](./presentation-images/doesnt-exist.jpg)
+![w:450 center](./presentation-images/doesnt-exist.jpg)
 
 Created using the StyleGAN developed by Nvidia.
 
@@ -158,7 +158,7 @@ my_empty_list = []
 
 So for images we ought to use something like a list for holding values for our pixels, but with something a bit more...
 
-![w:700 center](./presentation-images/star-image-example.png)
+![w:600 center](./presentation-images/star-image-example.png)
 
 ---
 # Arrays and Images
@@ -198,7 +198,7 @@ https://www.3blue1brown.com/lessons/neural-networks
 # Issues with GANs
 ---
 # Mode Collapse
-![h:500 center](./presentation-images/mode-collapse.png)
+![h:450 center](./presentation-images/mode-collapse.png)
 
 These are definitely ones...
 
@@ -238,7 +238,7 @@ GANs are based on the maths of optimisation. The objective of optimisation is to
 ---
 # Gradient Descent
 
-![h:500 center](./presentation-images/gradient-descent.gif)
+![h:450 center](./presentation-images/gradient-descent.gif)
 
 So what do we wish to "optimise" when running our GAN?
 
@@ -256,17 +256,6 @@ Our loss functions give us an indication of how well the Generator and Discrimin
 The Discriminator wants $D(x)$ to be high as possible. For $D(G(z))$ the Discriminator wants this to be as low as possible while the Generator wants this to be as high as possible.
 
 ---
-# Loss Functions
-
-## Discriminator Loss
-$\frac{1}{m}\sum_{i=1}^m \log(D(x^i)) + \log(1 - D(G(z^i)))$
-
-## Generator Loss
-$\frac{1}{m}\sum_{i=1}^m \log(1 - D(G(z^i)))$
-
-The Discriminator wishes to **maximise** its loss function while the Generator wishes to **minimise** its loss function.
-
----
 # Convergence Failure
 ## Discriminator Dominates
 
@@ -281,12 +270,6 @@ The Discriminator wishes to **maximise** its loss function while the Generator w
 ---
 
 # Now let's head over to the notebook...
-
-<!-- ---
-# Why Use the GPU?
-
-- A good GPU is good at doing maths.
-- For a game  -->
 
 ---
 
@@ -314,7 +297,7 @@ https://ami.withgoogle.com/
 
 # Sound of the Earth
 
-![h:500 center](./presentation-images/sound-of-the-earth.png)
+![h:450 center](./presentation-images/sound-of-the-earth.png)
 
 https://soundoftheearth.org/
 
@@ -322,7 +305,7 @@ https://soundoftheearth.org/
 
 # Dadabots
 
-![h:500 center](./presentation-images/dadabots-beatles.jpg)
+![h:450 center](./presentation-images/dadabots-beatles.jpg)
 
 https://dadabots.bandcamp.com/album/deep-the-beatles
 
@@ -330,24 +313,18 @@ https://dadabots.bandcamp.com/album/deep-the-beatles
 
 # Ganrio
 
-![h:500 center](./presentation-images/ganrio.webp)
+![h:450 center](./presentation-images/ganrio.webp)
 
 https://amyelizabethsmith01.medium.com/gans-sanrio-ganrio-21e263666929
 
 ---
-# Running the Code Locally
 
-- Download Miniforge: https://github.com/conda-forge/miniforge
-- Clone my repo: https://github.com/DolicaAkelloEgwel/gans-workshop
-- Make sure you've installed the Python extension in VSCode
-- Use `where` (Windows) in the Miniforge prompt
-- Use this path in VSCode as your Conda path
-- In Miniforge prompt, create an environment with the `environment.yml` file
-- In VSCode, refresh available interpresters, then use the `gans-environment` as your Python Interpreter
+# Black To Comm
+
+https://www.youtube.com/watch?v=XqV3Cftxw4A
 
 ---
 
-![h:600 center](./presentation-images/new-books.png)
-
----
 “You can think of generative models as giving artificial intelligence a form of **imagination**.” - Ian Goodfellow
+
+Feedback Form: **linktr.ee/dolica.ual**
