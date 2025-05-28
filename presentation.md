@@ -339,13 +339,37 @@ https://blacktocomm.bandcamp.com/album/le-jazz-homme
 
 ![h:450 center](./presentation-images/clowncore.jpg)
 
-There is a link in the Linktree if you're curious about this. The weird stuff starts at 22.30!
+There is a link in the Linktree if you're curious about this. The weird stuff starts at 22.30...
 
 ---
 
-
 “You can think of generative models as giving artificial intelligence a form of **imagination**.” - Ian Goodfellow
 
-### Feedback Form
+---
+
+# Other CTH Workshops
+
+<style scoped>
+section {
+    font-size: 18px;
+}
+</style>
+
+
+## Physical Computing
++ Beginner Physical Computing
+## Creative Coding
++ Interactive Web with Javascript
++ Generative Design with Javascript
+## Projection Mapping
++ Introduction to Touchdesigner
++ Projection Mapping with Touchdesigner
+## Game Development / VR / AR
++ Introduction to Game Environment Design with Unreal Engine
++ Building Augmented Reality (AR) for Headsets
+
+---
+
+# Feedback & Attendance
 
 linktr.ee/dolica.ual
