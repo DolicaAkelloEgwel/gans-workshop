@@ -29,6 +29,9 @@ So what does Generative Adversarial Network? Well let's start with the word _gen
 
 **Generative:** Capable of producing or creating something.
 
+---
+# Generative and Discriminative
+
 - **Discriminative:** Identifies and distinguishes between categories, such as recognising that a cat is a cat and a dog is a dog.
 - **Generative:** Generates new instances of cats or dogs by applying learned patterns.
 
